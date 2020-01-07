@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/text_congratulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFD04A"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:text="쓰리아웃 되었습니다 !"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="게임 다시하기"
+        android:textSize="30sp"
+        android:background="#D9646060"
+        android:textStyle="bold"
+        android:layout_below="@+id/text_congratulation"
+        android:layout_centerHorizontal="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@+id/restartButton"
+        android:id="@+id/animation_view"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>
